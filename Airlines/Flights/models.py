@@ -6,4 +6,5 @@ class Vuelo(models.Model):
     destino = models.CharField(max_length=64)
     duracion = models.IntegerField()
 
-    def()
+    def __str__(self):
+        return f"{self.origen} {self.destino} {self.duracion}"
